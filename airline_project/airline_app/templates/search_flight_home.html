@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  <body>
+    {% block content %}
+    <section class="searchsectioncustomer">
+      <!-- <div class="imgBx">
+        <img src="{% static 'images/handnew.png' %}" alt="">
+      </div> -->
+      <div class="contentBx">
+        <div class="formBx">
+          <h2>Search Flight</h2>
+          <form action="search_result_home">
+            <div class="inputBx">
+              <span>From Country:</span>
+              <input type="" name="">
+            </div>
+            <div class="inputBx">
+              <span>To Country:</span>
+              <input type="" name="">
+            </div>
+            <div class="inputBx">
+                <span>Travel Date:</span>
+                <input type="date" name="">
+            </div>
+            <div class="inputBx">
+              <span>Class:</span><br>
+              <select name="" id="">
+                <option value="Business">Business</option>
+                <option value="Economy">Economy</option>
+              </select>
+          </div>
+
+
+            
+            <div class="inputBx">
+              <input type="submit" value="Submit" name="" style="width:80%;">
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    {% endblock %}
+  </body>

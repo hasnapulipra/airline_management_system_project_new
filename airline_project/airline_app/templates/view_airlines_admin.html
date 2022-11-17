@@ -1,0 +1,48 @@
+{% extends 'admin_base.html' %}
+{% load static %}
+
+<body>
+  {% block content %}
+  <!-- <img src="{% static 'images/latest3.png' %}" class="w-100" alt="..."> -->
+  <section class="view_airlines_admin_section" style="padding-top:8%;">
+    <h2>View Airlines</h2>
+    
+    <table class="table">
+        <thead>
+            <th>Sr.No</th>
+            <th>Image</th>
+            <th>Airlines Name</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <!-- <th>Country</th> -->
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Sr.No">1</td>
+                <td data-label="Image"><img src="{% static 'images/Air-India-logo.png' %}" alt="" width="65px;"></td>
+                <td data-label="Airlines Name">Air India</td>
+                <td data-label="Email">airindia@gmail.com</td>
+                <td data-label="Contact No">98765432</td>
+                <!-- <td data-label="Country">India</td> -->
+                <td data-label="Action"><a href="" style="color:#ff4584;">Delete</a></td>
+            </tr>
+            <tr>
+                <td data-label="Sr.No">2</td>
+                <td data-label="Image"><img src="{% static 'images/Air-Arabia-logo.png' %}" alt="" width="65px;"></td>
+                <td data-label="Airlines Name">Air Arabia</td>
+                <td data-label="Email">air_arabia@gmail.com</td>
+                <td data-label="Contact No">98765432</td>
+                <!-- <td data-label="Country">Saudi Arabia</td> -->
+                <td data-label="Action"><a href="" style="color:#ff4584;">Delete</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    </section>
+  {% endblock %}
+
+</body>
+
+  

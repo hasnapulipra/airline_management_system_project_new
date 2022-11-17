@@ -1,0 +1,135 @@
+{% extends 'customer_base.html' %}
+{% load static %}
+
+<body>
+  {% block content %}
+ 
+  <section class="addpassenger_section"style="padding-top:8%;">
+    <h2 style="text-align:left;">Airlines Details</h2>
+    <hr>
+    <div class="airline_details">
+        
+            <div class="imgBx">
+                <img src="{% static 'images/Air-India-logo.png' %}" alt="">
+            </div>
+            <div class="content">
+                <span><b>Air India</b></span><br>
+                <span>Airline number : 587567</span><br>
+                <span>From City : India</span><br>
+                <span>Fare : 20000</span>
+            </div>
+        
+    </div>
+    <hr>
+    <h2 style="text-align:left;">Enter passenger Details</h2>
+    <hr>
+    <div class="add_passenger_details">
+        <form action="">
+            <input type="text" name="passenger_name" id="" placeholder="Passenger Name">
+            <input type="text" name="passenger_age" id="" placeholder=" Passenger Age">
+            <input type="text" name="Contact" id="contact" placeholder="Contact No" autocomplete="off">
+              <!-- <h5 id="contactcheck" class="error_message"></h5> -->
+            <select name="" id="" placeholder="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <button id="b1" style="padding:6px 15px;"><a href="" style="color:white;text-decoration:none;">Add</a></button>
+            
+        </form>
+       
+    </div>
+
+    
+    <h2>all Added Passengers</h2>
+    <hr>
+    <p style="color:red;">Passenger added successfully !!!</p>
+    
+    <table class="table">
+        <thead>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Mobile No</th>
+            <th>Fare</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Sr.No">1</td>
+                <td data-label="Name">Arun</td>
+                <td data-label="Age">34</td>
+                <td data-label="Gender">Male</td>
+                <td data-label="Mobile No">98765644</td>
+                <td data-label="Fare">20000.00/-</td>
+                <td data-label="Action"><a href="" style="color:#ff4584;">Delete</a></td>
+            </tr>
+            <tr>
+                
+                <th colspan="5" style="text-align:right;color:#607d8b;">Total Fare:</th>
+                <th colspan="2" style="text-align:left;color:#607d8b;">20000</th>
+            </tr>
+            <tr>
+                <td colspan="7"><button id="b2"><a href="" style="color:white;text-decoration:none;">Book Ticket</a></button></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- <button><a href="" style="color:white;text-decoration:none;">Book Ticket</a></button> -->
+    </section>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('#contactcheck').hide();
+
+        //     var contact_err = true;
+
+        //     $('#contact').keyup(function(){
+        //         contact_check();
+        //     })
+        //     function contact_check(){
+        //         var contact_val = $('#contact').val();
+        //         var mobilecheck=/^[0-9]{10}$/;
+        //         if(contact_val.length == ""){
+        //             $('#contactcheck').show();
+        //             $('#contactcheck').html("** Please fill the contact no");
+        //             $('#contactcheck').focus();
+        //             $('#contactcheck').css("color","red");
+
+        //         }
+        //         else{
+        //             $('#contactcheck').hide();
+        //         }
+        //         if(mobilecheck.test(contact_val)){
+        //             $('#contactcheck').hide();
+        //         }
+        //         else{
+        //             $('#contactcheck').show();
+        //             $('#contactcheck').html("** Contact No is invalid");
+        //             $('#contactcheck').focus();
+        //             $('#contactcheck').css("color","red");
+        //             contact_err = false;
+        //             return false;
+        //         }
+        //     }
+
+
+        //     $('#b1').click(function(){
+        //         contact_err = true;
+        //         contact_check();
+        //         if (contact_err == true){
+        //             return true;
+        //         }
+        //         else{
+        //             return false;
+        //         }
+        //     })
+        // })
+    </script>
+  {% endblock %}
+
+</body>
+
+  

@@ -1,0 +1,66 @@
+{% extends 'airlines_base.html' %}
+{% load static %}
+
+  <body>
+    {% block content %}
+    <div class="Add_flight_section d-flex justify-content-center">
+      <div class="container">
+        <div class="title">Add Flight</div>
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Flight Name</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Flight No</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Departure Country</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Arrival Country</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Departure Date/Time</span>
+              <input type="datetime-local" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Arrival Date/Time</span>
+              <input type="datetime-local" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Total Economic Seats</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Total Business Seats</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Price</span>
+              <input type="text" name="" id="">
+            </div>
+            <div class="input-box">
+              <span class="details">Image</span>
+              <input type="file" name="" id="" style="padding-top:3%;">
+            </div>
+          </div>
+          
+          
+          <div class="button">
+            <input type="submit" name="" value="Save">
+            <input type="submit" name="" value="Cancel">
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    
+    
+    {% endblock %}
+  </body>

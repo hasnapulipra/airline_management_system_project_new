@@ -1,0 +1,45 @@
+{% extends 'airlines_base.html' %}
+{% load static %}
+
+<body>
+  {% block content %}
+  <!-- <img src="{% static 'images/latest3.png' %}" class="w-100" alt="..."> -->
+  <section class="view_flight_airlines_section" style="padding-top:8%;">
+    <h2>View Flights</h2>
+    
+    <table class="table">
+        <thead>
+            <th>Sr.No</th>
+            <th>Image</th>
+            <th>Flight Name</th>
+            <th>Flight Number</th>
+            <th>Total Fare</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Sr.No">1</td>
+                <td data-label="Image"><img src="{% static 'images/Air-India-logo.png' %}" alt="" width="65px;"></td>
+                <td data-label="Flight Name">Air India</td>
+                <td data-label="Flight Number">43421243</td>
+                <td data-label="Total Fare">40000.00/-</td>
+                <td data-label="Action"><a href="view_flight_detail_airlines"><button>View Detail</button></a>&nbsp;<a href="edit_flight_detail_airlines"><button>Edit Detail</button></a>&nbsp;<a href=""><button>Delete</button></a></td>
+            </tr>
+            <tr>
+                <td data-label="Sr.No">2</td>
+                <td data-label="Image"><img src="{% static 'images/Air-India-logo.png' %}" alt="" width="65px;"></td>
+                <td data-label="Flight Name">Air India</td>
+                <td data-label="Flight Number">87621243</td>
+                <td data-label="Total Fare">20000.00/-</td>
+                <td data-label="Action"><a href="view_flight_detail_airlines"><button>View Detail</button></a>&nbsp;<a href="edit_flight_detail_airlines"><button>Edit Detail</button></a>&nbsp;<a href=""><button>Delete</button></a></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    </section>
+  {% endblock %}
+
+</body>
+
+  

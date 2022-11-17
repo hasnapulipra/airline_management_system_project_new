@@ -1,0 +1,36 @@
+{% extends 'admin_base.html' %}
+{% load static %}
+
+<body>
+  {% block content %}
+  <!-- <img src="{% static 'images/latest3.png' %}" class="w-100" alt="..."> -->
+  <section class="viewfeedback_section" style="padding-top:8%;">
+    <h2>View Feedback</h2>
+    <table class="table">
+        <thead>
+            <th>Username</th>
+            <th>Email Id</th>
+            <th>Feedback Date</th>
+            <th>Feedback Message</th>
+            
+
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Username">Arun</td>
+                <td data-label="Email Id">arun123@gmail.com</td>
+                <td data-label="Feedback Date">12/4/2022</td>
+                <td data-label="Feedback Message">This site is very useful.</td>
+            </tr>
+           
+           
+
+        </tbody>
+    </table>
+    
+    </section>
+  {% endblock %}
+
+</body>
+
+  
